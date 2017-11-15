@@ -15,3 +15,15 @@ Oracle Linking
 3. See the tables by querying in SQL Commands select * from all_tables
 4. Download SQL Developer from oracle website.
 5. Run the sql_developer.exe     In this you can create, alter, delete tables easily
+6. Create new Connection, give username:oraadmin, password: pswd(Used in AWS), hostname address of AWS, SID - ORCL and connect.
+
+7.In local create a odbc driver, go to control panel and search for ODBC driver, select 64 bit and configure.
+8. In Access, go to export->more->ODBC Database ->Gives a popup, enter Name of table you want to insert into Oracle db in AWS
+9. Now select Data source, u will see lish of drivers, select the one u created in 7 step
+10. It will ask for password. Give the password for user oraadmin and ok.
+
+To reflect changes made in access form directly reflect in Oracle db.
+11. Now that you have exported your tables to oracle db, all your data is in aws backend db of oracle.
+12. Delete all the tables from local access. *Take a backup before deleting
+13. Now import tables using ODBC connection from oracle db. Change the names of the tables to match exactly as earlier tables. As these names are used in forms and other place.
+14. Now the insertions, modifications reflects in oracle db of aws. 
