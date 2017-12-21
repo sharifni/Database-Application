@@ -27,3 +27,11 @@ To reflect changes made in access form directly reflect in Oracle db.
 12. Delete all the tables from local access. *Take a backup before deleting
 13. Now import tables using ODBC connection from oracle db. Change the names of the tables to match exactly as earlier tables. As these names are used in forms and other place.
 14. Now the insertions, modifications reflects in oracle db of aws. 
+
+
+
+
+
+
+
+![globalfootprint](https://user-images.githubusercontent.com/32714796/34234400-e8f1dfcc-e5b8-11e7-865b-86130737efc8.PNG)
