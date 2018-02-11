@@ -1,5 +1,15 @@
 # DBMSProject
-Developing database system in access and integrating it with oracle DB.
+Project description:
+- Created an OLTP database and a database application for a cloth store to model sales, procurement, and inventory in MS Access.
+- Migrated the database to Oracle DB hosted in Relational Database Service(RDS) instance of AWS. Established connection to Oracle and Access with the help of linked tables by creating ODBC connections for Oracle and configuring TNS entries.
+- Used the forecasted demand to manage inventory using EOQ inventory control models and arrived at reorder point.
+- Integrated the application for the cloth store with three other applications for stationary, grocery store and electronics store to model acquisitions and mergers yielding to a supermarket sales model.
+- Migrated the back end Oracle to multiple database servers located at multiple regions in AWS viz., US East, EU and Asia Pacific to model an organization with a global footprint with sales in EU region, Corporate headquarters in US East region and procurement in Asia Pacific.
+- Linked all databases with the help of database links in oracle database.
+- Audited tables in all regions to log user interaction using triggers and restricted access through fine grain access control (FGAC) policy implementation in Oracle.
+- Created automated periodic snapshots of data in the corporate region at US East region in AWS with the help of PL SQL procedures and schedulers in Oracle.
+- Created reports like top customers and products, cash flow statements etc utilizing Oracle analytical functions which could be accessed both in MS Access front end application and in Tableau to aid decision making for managers of all departments.
+- *Used Tableau to predict the future sales of products and customer growth for the next quarter. Prepared dashboards visualizing sales, customer statistics, supply chain and their forecasts in Tableau with live data from RDS instance of AWS which is used by management for key decision making.
 
 Flow:
 Access Development
@@ -31,7 +41,14 @@ To reflect changes made in access form directly reflect in Oracle db.
 
 
 
+Data Model (Entity Relationship Diagram):
+![relationship](https://user-images.githubusercontent.com/32714796/36077934-ac6a0b10-0f3e-11e8-9f94-a3b61e7a0510.PNG)
 
+Application Login Page:
+![login_page](https://user-images.githubusercontent.com/32714796/36077938-b48c31a6-0f3e-11e8-82f8-0fcfb21088f8.PNG)
 
+Application Home Page:
+![home](https://user-images.githubusercontent.com/32714796/36077939-b778e65c-0f3e-11e8-92bf-304c4d89dff4.PNG)
 
+Global Foot print:
 ![globalfootprint](https://user-images.githubusercontent.com/32714796/34234400-e8f1dfcc-e5b8-11e7-865b-86130737efc8.PNG)
