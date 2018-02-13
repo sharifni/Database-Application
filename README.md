@@ -29,6 +29,8 @@ Add SID details of AWS in tnsnames files inorder to connect to the AWS. Transpar
 6. Create new Connection, give username:oraadmin, password: password(Used in AWS), hostname address of AWS, SID - ORCL and connect.
 
 7.In local create a odbc driver, go to control panel and search for ODBC driver, select 64 bit and configure.
+![odbc_driver_config](https://user-images.githubusercontent.com/32714796/36129745-aca2468a-1036-11e8-8071-4e9fefa7ef15.PNG)
+
 8. In Access, go to export->more->ODBC Database ->Gives a popup, enter Name of table you want to insert into Oracle db in AWS
 9. Now select Data source, u will see list of drivers, select the one u created in 7 step
 10. It will ask for password. Give the password for user oraadmin and ok.
