@@ -7,7 +7,7 @@ Project description:
 - Migrated the back end Oracle to multiple database servers located at multiple regions in AWS viz., US East, EU and Asia Pacific to model an organization with a global footprint with sales in EU region, Corporate headquarters in US East region and procurement in Asia Pacific.
 - Linked all databases with the help of database links in oracle database.
 - Audited tables in all regions to log user interaction using triggers and restricted access through fine grain access control (FGAC) policy implementation in Oracle.
-- Created automated periodic snapshots of data in the corporate region at US East region in AWS with the help of PL SQL procedures and schedulers in Oracle.
+- Created automated periodic snapshots of data in the corporate region at US East region in AWS
 - Created reports like top customers and products, cash flow statements etc utilizing Oracle analytical functions which could be accessed both in MS Access front end application and in Tableau to aid decision making for managers of all departments.
 - *Used Tableau to predict the future sales of products and customer growth for the next quarter. Prepared dashboards visualizing sales, customer statistics, supply chain and their forecasts in Tableau with live data from RDS instance of AWS which is used by management for key decision making.
 
@@ -25,11 +25,12 @@ Oracle Linking
 3. See the tables by querying in SQL Commands select * from all_tables
 4. Download SQL Developer from oracle website.
 5. Run the sql_developer.exe     In this you can create, alter, delete tables easily
-6. Create new Connection, give username:oraadmin, password: pswd(Used in AWS), hostname address of AWS, SID - ORCL and connect.
+Add SID details of AWS in tnsnames files inorder to connect to the AWS. Transparent Network Substrate (TNS), a proprietary Oracle computer-networking technology, supports homogeneous peer-to-peer connectivity on top of other networking technologies such as TCP/IP, SDP and named pipes. TNS operates mainly for connection to Oracle databases.
+6. Create new Connection, give username:oraadmin, password: password(Used in AWS), hostname address of AWS, SID - ORCL and connect.
 
 7.In local create a odbc driver, go to control panel and search for ODBC driver, select 64 bit and configure.
 8. In Access, go to export->more->ODBC Database ->Gives a popup, enter Name of table you want to insert into Oracle db in AWS
-9. Now select Data source, u will see lish of drivers, select the one u created in 7 step
+9. Now select Data source, u will see list of drivers, select the one u created in 7 step
 10. It will ask for password. Give the password for user oraadmin and ok.
 
 To reflect changes made in access form directly reflect in Oracle db.
